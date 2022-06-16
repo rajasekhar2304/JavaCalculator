@@ -7,5 +7,10 @@ pipeline {
                 git branch: "dev", url: "https://github.com/rajasekhar2304/JavaCalculator.git"
             }
         }
+        stage("Change Directory") {
+            steps {
+                sh "cd JavaCalculator"
+            }
+        }
     }
 }
