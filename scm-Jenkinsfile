@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage("SCM Checkout") {
             steps {
-                git branch: "dev", url: "https://github.com/rajasekhar2304/JavaCalculator.git"
+                git branch: "dev", 
+                    url: "https://github.com/rajasekhar2304/JavaCalculator.git"
+
+                sh "ls -l"
             }
         }
     }
